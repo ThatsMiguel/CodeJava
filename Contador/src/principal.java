@@ -137,13 +137,10 @@ public class principal extends javax.swing.JFrame {
         int warning;
         warning = JOptionPane.showConfirmDialog(null, "A informação não será salva. Deseja sair?","Atenção",JOptionPane.YES_NO_OPTION);
         if(warning == JOptionPane.YES_OPTION){
-            System.exit(0);
-        }else{
+            System.exit(0);// Fecha aplicação caso selecione sim
+        }else{ //caso selecione não, a aplicação continua rodando
             JOptionPane.showMessageDialog(null, "Fechar foi cancelado.");
         }
-
-        // Fecha aplicação
-        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
